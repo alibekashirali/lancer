@@ -3,5 +3,5 @@ class Gig < ActiveRecord::Base
   belongs_to :category
   has_many :abilities
   has_many :skills, through: :abilities
-
+  belongs_to :user
 end
